@@ -1,0 +1,262 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "get available Pet",
+        "description": "",
+        "id": "verify-the-functionality-related-to-pet-store;get-available-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5543989800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I \"get\" the pet using endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 3
+                }
+              ],
+              "location": "PetStoreStepDef.i_something_the_pet_using_endpoint(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 563064800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate the available pets details in response",
+            "match": {
+              "location": "PetStoreStepDef.i_validate_the_available_pets_details_in_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@petstore"
+          },
+          {
+            "name": "@1"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Create a Pet",
+        "description": "",
+        "id": "verify-the-functionality-related-to-pet-store;create-a-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2195046900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I \"create\" the pet using endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create",
+                  "offset": 3
+                }
+              ],
+              "location": "PetStoreStepDef.i_something_the_pet_using_endpoint(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14740600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I validate pet details in response",
+            "match": {
+              "location": "PetStoreStepDef.i_validate_pet_details_in_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@petstore"
+          },
+          {
+            "name": "@2"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Update a Pet",
+        "description": "",
+        "id": "verify-the-functionality-related-to-pet-store;update-a-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2233059800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I \"update\" the pet using endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "update",
+                  "offset": 3
+                }
+              ],
+              "location": "PetStoreStepDef.i_something_the_pet_using_endpoint(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20924100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I validate updated pet details in response",
+            "match": {
+              "location": "PetStoreStepDef.i_validate_updated_pet_details_in_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@petstore"
+          },
+          {
+            "name": "@3"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Delete a Pet",
+        "description": "",
+        "id": "verify-the-functionality-related-to-pet-store;delete-a-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1948437200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I \"delete\" the pet using endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "delete",
+                  "offset": 3
+                }
+              ],
+              "location": "PetStoreStepDef.i_something_the_pet_using_endpoint(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22664400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I validate the response",
+            "match": {
+              "location": "PetStoreStepDef.i_validate_the_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@petstore"
+          },
+          {
+            "name": "@4"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Verify the deleted Pet",
+        "description": "",
+        "id": "verify-the-functionality-related-to-pet-store;verify-the-deleted-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2155977600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I \"verifiedDeleted\" the pet using endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "verifiedDeleted",
+                  "offset": 3
+                }
+              ],
+              "location": "PetStoreStepDef.i_something_the_pet_using_endpoint(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29373400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I validate deleted pet details in response",
+            "match": {
+              "location": "PetStoreStepDef.i_validate_deleted_pet_details_in_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@petstore"
+          },
+          {
+            "name": "@5"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the functionality related to pet store",
+    "description": "",
+    "id": "verify-the-functionality-related-to-pet-store",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PetStore.feature",
+    "tags": [
+      {
+        "name": "@petstore",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

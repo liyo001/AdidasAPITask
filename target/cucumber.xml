@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="14.732644">
+<testcase classname="Verify the functionality related to pet store" name="get available Pet" time="6.110976">
+<system-out><![CDATA[Given I "get" the pet using endpoint........................................passed
+Then I validate the available pets details in response......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the functionality related to pet store" name="Create a Pet" time="2.210109">
+<system-out><![CDATA[Given I "create" the pet using endpoint.....................................passed
+Then I validate pet details in response.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the functionality related to pet store" name="Update a Pet" time="2.254522">
+<system-out><![CDATA[Given I "update" the pet using endpoint.....................................passed
+Then I validate updated pet details in response.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the functionality related to pet store" name="Delete a Pet" time="1.971402">
+<system-out><![CDATA[Given I "delete" the pet using endpoint.....................................passed
+Then I validate the response................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the functionality related to pet store" name="Verify the deleted Pet" time="2.185635">
+<system-out><![CDATA[Given I "verifiedDeleted" the pet using endpoint............................passed
+Then I validate deleted pet details in response.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
