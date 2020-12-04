@@ -1,4 +1,4 @@
-package com.qa.adidas.utility;
+package com.qa.band.utility;
 
 import java.io.File;
 import java.net.URL;

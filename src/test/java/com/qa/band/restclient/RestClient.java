@@ -1,12 +1,9 @@
-package com.qa.adidas.restclient;
+package com.qa.band.restclient;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
 import java.util.Map;
-
-import com.qa.adidas.utility.Utilities;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -33,19 +30,6 @@ public class RestClient {
 
     }
 
-    public static Response dodelete(String ContentType, String baseURI,
-            String basPath, Map<String, String> paramsMap, String petID,
-            boolean log) {
-
-        setBaseURI(baseURI);
-        RequestSpecification request = createRequest(ContentType, paramsMap,
-                petID, log);
-        Response response = getResponse("DELETE", request, basPath);
-
-        return response;
-
-    }
-
     public static Response doPost(String ContentType, String baseURI,
             String basPath, Map<String, String> paramsMap, String pathParms,
             boolean log) throws IOException {
@@ -54,26 +38,9 @@ public class RestClient {
                 pathParms, log);
         String jsonBody = new String(Files.readAllBytes(Paths.get(System
                 .getProperty("user.dir")
-                + "/src/test/java/com/qa/adidas/testData/createPet.txt")));
+                + "/src/test/java/com/qa/band/testData/createPlan.txt")));
         request.body(jsonBody);
         Response response = getResponse("POST", request, basPath);
-        return response;
-
-    }
-
-    public static Response doUpdate(String ContentType, String baseURI,
-            String basPath, Map<String, String> paramsMap, String pathParams,
-            boolean log) throws IOException {
-        setBaseURI(baseURI);
-        RequestSpecification request = createRequest(ContentType, paramsMap,
-                pathParams, log);
-        Map<String, String> jsonValues = new HashMap<String, String>();
-
-        jsonValues.put("Status", "sold");
-        String jsonBody = Utilities.alterJson(jsonValues);
-
-        request.body(jsonBody);
-        Response response = getResponse("PUT", request, basPath);
         return response;
 
     }

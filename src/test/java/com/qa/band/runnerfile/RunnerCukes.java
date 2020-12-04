@@ -1,4 +1,4 @@
-package com.qa.adidas.runnerfile;
+package com.qa.band.runnerfile;
 
 import org.junit.runner.RunWith;
 
